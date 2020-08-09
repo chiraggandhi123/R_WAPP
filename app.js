@@ -72,7 +72,7 @@ https.get(url2,(res)=>{
       var ico =  list[i].weather[0].icon
       console.log(ico)
       // console.log(min_t,max_t)
-      $('.degree')[j].textContent = max_t;
+      $('.degree')[j].innerHTML =  `${parseInt(max_t)}`;
       $("img")[k].src="http://openweathermap.org/img/w/"+ico+".png"
       $("small")[parseInt(x)].innerHTML = `${tex}`
       j+=1;k+=1;x+=1;
